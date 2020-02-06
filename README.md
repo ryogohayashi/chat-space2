@@ -1,24 +1,41 @@
 # README
+#chat-space2 DB設計
+## usersテーブル
+| Column | Type | Option |
+| ------ | ---- | ------ |
+| username | string | null: false |
+| email | string | null: false |
+| password | string | null: false |
+### Association
+- has_many : chats
+- has_many : users_groups
+- has_many : groups,  through:  :users_groups
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## groupsテーブル
+| Column | Type | Option |
+| ------ | ---- | ------ |
+| name | string | null: false |
+### Association
+- has_many : chats
+- has_many : users_groups
+- has_many : users,  through:  :users_groups
 
-Things you may want to cover:
+## chatsテーブル
+| Column | Type | Option |
+| ------ | ---- | ------ |
+| text | text | null: true |
+| image | string | null: true |
+| users_id | integer | null: false, foreign_key: ture |
+| groups_id | integer | null: false, foreign_key: ture |
+### Association
+- belong_to : user
+- belong_to : group
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## users_groupsテーブル
+| Column | Type | Option |
+| ------ | ---- | ------ |
+| users_id | integer | null: false, foreign_key: ture |
+| groups_id | integer | null: false, foreign_key: ture |
+### Association
+- belong_to : user
+- belong_to : group
