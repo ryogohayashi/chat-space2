@@ -1,0 +1,25 @@
+.main_bar
+ .main_bar_groupname
+  .main_bar_group_name_member
+   .main_bar_group_name text
+   .main_bar_member
+    .main_bar_member_text Member :
+    .main_bar_menber_name masa
+  .main_bar_edit 
+   = link_to"#",class:"group_edit" do
+    Edit
+ .main_bar_timeline
+  .main_bar_timeline_text_user_day_item
+   .main_bar_timeline_text
+    .main_bar_timeline_user masa
+    .main_bar_timeline_day 2020/02/10(Mon) 20:09:06
+   .main_bar_timeline_text_item メッセージを入力してください
+
+ .main_bar_textedit.new.message
+  .main_bar_textedit.message_icon
+   %input{type: "text", class: "main_bar_textedit_empty", placeholder: "type a message"}
+   %label{class: "image"}
+    =icon('fas','image')
+    %input{type: "file", class: "file"}
+  .send_bar
+   %input{type: "submit", name: "commit", value: "Send", class: "submit-btn"}
