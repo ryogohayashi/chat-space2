@@ -1,0 +1,133 @@
+.main_bar{
+  width: calc(100% - 300px);
+  .main_bar_groupname{
+    background-color: #ffffff;
+    height: 100px;
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_bar_timeline{
+    background-color: #fafafa;
+    height: calc(100vh - 190px);
+  }
+  .main_bar_textedit{
+    background-color: #d2d2d2;
+    height: 90px;
+  }
+}
+
+.main_bar_group_name_member{
+  margin-top: 35px;
+}
+.main_bar_group_name{
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.main_bar_member{
+  display: flex;
+  .main_bar_member_text{
+    color: #999999;
+    font-size: 12px;
+
+  }
+  .main_bar_menber_name{
+    color: #999999;
+    font-size: 12px;
+
+  }
+
+}
+
+.main_bar_edit{
+  width: 72px;
+  height: 40px;
+  display: flex;
+  align-self: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 40px;
+  border-color: #38aef0;
+  border-width: thick;
+
+}
+
+.group_edit{
+  text-decoration: none;
+  color: #38aef0;
+}
+
+.main_bar_timeline{
+  padding-bottom: 46px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 46px;
+}
+
+.main_bar_timeline_text_user_day_item{
+  padding-bottom: 40px;
+}
+
+.main_bar_timeline_text{
+  display: flex;
+}
+.main_bar_timeline_user{
+
+}
+.main_bar_timeline_day{
+  margin-left: 10px;
+}
+
+.main_bar_textedit.new.message{
+  height: 90px;
+  background-color: #d2d2d2;
+  padding: 20px,40px,20px,40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main_bar_textedit.message_icon{
+    padding-left: 10px;
+    padding-right: 40px;
+    height: 50px;
+    width: 400px;
+    position: relative;
+    .main_bar_textedit_empty{
+      width: 390px;
+      height: 50px;
+      padding-right: 40px;
+      padding-left: 10px;
+      position: absolute;
+    }
+    .image{
+      position: absolute;
+      top: 11px;
+      left: 370px;
+      font-size: 1.3rem;
+      color: #000000;
+
+    }
+
+  }
+
+  .file{
+    display: none;
+  }
+  .submit-btn{
+    width: 100px;
+    height: 50px;
+    margin-left: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    background-color: #38aef0;
+    color: white;
+    .send_bar_authentic{
+      text-decoration: none;
+    }
+  }
+}
