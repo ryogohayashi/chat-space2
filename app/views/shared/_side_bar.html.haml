@@ -6,13 +6,15 @@
    .side_bar_icon
     %ul.side_bar_icon_edit_cog
      %li.side_bar_icon_edit
-      = link_to"#",class:"edit" do
+      = link_to new_group_path,class:"edit" do
        =icon('fas','edit')
      %li.side_bar_icon_cog
       = link_to edit_user_path(current_user), class: "cog" do 
        =icon('fas','cog',)
  .side_bar_group
-  .side_bar_groupname_message
-   .side_bar_groupname techcamp
-   .side_bar_message まだメッセージがありません
-   
+  - current_user.groups.each do |group|
+   .group
+    = link_to '#', class: "group__link "do
+     .group__name
+      = group.name 
+     .group__message メッセージはまだありません。 
