@@ -34,20 +34,24 @@
    padding-left: 20px;
    padding-right: 20px;
    padding-top: 20px;
- }
- .side_bar_groupname_message{
-   color: #ffffff;
-   font-weight: bold;
-   .side_bar_groupname{
-     height: 23px;
-     margin-bottom: 5px;
-     font-size: 15px;
+
+   .group{
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 40px;
+    .group__name{
+      height: 23px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .group__message{
+      height: 15px;
+      font-size: 11px;
+      color: #ffffff;
+    }
    }
-   .side_bar_message{
-     height: 15px;
-     font-size: 11px;
-   }
- }
+  }
 }
 
 
@@ -58,4 +62,8 @@
 .cog{
   color: #ffffff;
   margin-left: 5px;
+}
+
+.group__link{
+  text-decoration: none;
 }
