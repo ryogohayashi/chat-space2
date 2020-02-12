@@ -1,15 +1,16 @@
 .side_bar
  .side_bar_user
   .side_bar_username
-   .side_bar_edit masa
+   .side_bar_edit 
+    = current_user.name
    .side_bar_icon
     %ul.side_bar_icon_edit_cog
      %li.side_bar_icon_edit
       = link_to"#",class:"edit" do
        =icon('fas','edit')
      %li.side_bar_icon_cog
-      = link_to"#",class:"cog" do 
-       =icon('fas','cog')
+      = link_to edit_user_path(current_user), class: "cog" do 
+       =icon('fas','cog',)
  .side_bar_group
   .side_bar_groupname_message
    .side_bar_groupname techcamp
