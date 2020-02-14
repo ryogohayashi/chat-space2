@@ -13,6 +13,10 @@
   .main_bar_timeline{
     background-color: #fafafa;
     height: calc(100vh - 190px);
+    padding-bottom: 46px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 46px;
   }
   .main_bar_textedit{
     background-color: #d2d2d2;
@@ -33,14 +37,11 @@
   .main_bar_member_text{
     color: #999999;
     font-size: 12px;
-
   }
   .main_bar_menber_name{
     color: #999999;
     font-size: 12px;
-
   }
-
 }
 
 .main_bar_edit{
@@ -52,9 +53,9 @@
   padding-right: 20px;
   font-size: 16px;
   line-height: 40px;
+  border-style: solid;
   border-color: #38aef0;
-  border-width: thick;
-
+  border-width: 1px;
 }
 
 .group_edit{
@@ -62,72 +63,60 @@
   color: #38aef0;
 }
 
-.main_bar_timeline{
-  padding-bottom: 46px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 46px;
-}
-
-.main_bar_timeline_text_user_day_item{
+.message{
   padding-bottom: 40px;
+  .upper-message{
+    display: flex;
+    margin-bottom: 10px;
+    .upper-message__user-name{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .upper-message__date{
+      font-size: 12px;
+      margin-left: 10px;
+      color: #999999;
+    }
+  }
+  .lower-message{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #434a54;
+  }
 }
 
-.main_bar_timeline_text{
-  display: flex;
-}
-.main_bar_timeline_user{
-
-}
-.main_bar_timeline_day{
-  margin-left: 10px;
-}
-
-.main_bar_textedit.new.message{
+.form{
   height: 90px;
-  background-color: #d2d2d2;
-  padding: 20px,40px,20px,40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  .main_bar_textedit.message_icon{
-    padding-left: 10px;
-    padding-right: 40px;
+  background-color: #dddddd;
+}
+
+.new_message{
+  width: 505px;
+  display: flex;
+  position: relative;
+  .form__message{
+    width: 390px;
     height: 50px;
-    width: 400px;
-    position: relative;
-    .main_bar_textedit_empty{
-      width: 390px;
-      height: 50px;
-      padding-right: 40px;
-      padding-left: 10px;
-      position: absolute;
-    }
-    .image{
-      position: absolute;
-      top: 11px;
-      left: 370px;
-      font-size: 1.3rem;
-      color: #000000;
-
-    }
-
   }
-
-  .file{
-    display: none;
+  .form__mask{
+    position: absolute;
+    right: 125px;
+    bottom: 13px;
+    .hidden{
+      display: none;
+    }
   }
-  .submit-btn{
+  .form__submit{
     width: 100px;
     height: 50px;
+    background-color: #38aef0;
     margin-left: 15px;
     padding-left: 30px;
     padding-right: 30px;
-    line-height: 50px;
-    background-color: #38aef0;
     color: white;
-    .send_bar_authentic{
-      text-decoration: none;
-    }
   }
 }
+
