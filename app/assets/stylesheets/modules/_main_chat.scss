@@ -63,28 +63,25 @@
   color: #38aef0;
 }
 
-.main_bar_timeline{
-  overflow: scroll;
-  .message{
-    padding-bottom: 40px;
-    .upper-message{
-      display: flex;
-      margin-bottom: 10px;
-      .upper-message__user-name{
-        font-size: 16px;
-        font-weight: bold;
-      }
-      .upper-message__date{
-        font-size: 12px;
-        margin-left: 10px;
-        color: #999999;
-      }
+.message{
+  padding-bottom: 40px;
+  .upper-message{
+    display: flex;
+    margin-bottom: 10px;
+    .upper-message__user-name{
+      font-size: 16px;
+      font-weight: bold;
     }
-    .lower-message{
-      margin-bottom: 10px;
-      font-size: 14px;
-      color: #434a54;
+    .upper-message__date{
+      font-size: 12px;
+      margin-left: 10px;
+      color: #999999;
     }
+  }
+  .lower-message{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #434a54;
   }
 }
 
@@ -94,18 +91,14 @@
   justify-content: center;
   align-items: center;
   background-color: #dddddd;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .new_message{
-  width: 100%;
+  width: 505px;
   display: flex;
   position: relative;
   .form__message{
-    width: 100%;
+    width: 390px;
     height: 50px;
   }
   .form__mask{
