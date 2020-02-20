@@ -62,6 +62,7 @@ gem 'font-awesome-sass', '~> 5.12.0'
 gem 'devise'
 gem 'pry-rails'
 gem 'carrierwave'
+gem 'fog-aws'
 gem 'mini_magick'
 gem 'jquery-rails'
 
